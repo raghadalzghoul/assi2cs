@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+        width:150px;
+        height:50px;
+        font-size:17px;
+        border:3px solid green;
+        background-color: white;
+        font-weight:bold;
+       
+        
+        margin-top:20px;
+        margin-left:9%;
+    }
+
+    button:hover{
+        color:white;
+        background-color: green;
+
+
+    }
+
+    ol {
+            list-style-type: none; 
+            padding-left: 20px; 
+            background-color: yellow;
+            width:80%;
+           margin:auto;
+           margin-top:20px;
+        }
+
+        ol li::before {
+           content:"\25A0";
+            color: orangered; 
+            font-size: 1.2em; 
+            margin-right: 10px; 
+           
+        }
+
+
+          img  {
+     position: absolute;
+     z-index: -1;
+  
+     left:160px;
+     opacity: 0.8;
+
+ }
+
+ .rag {
+     position: relative;
+  
+   top:120px;
+   left:160px;
+
+ }
+    </style>
+</head>
+
+<body>
+<div>
+<button>This Is a Link</button>
+</div>
+<div>
+    <ol>
+        <li>cofee</li>
+        <li>Tea</li>
+        <li>CoCa Cola</li>
+        
+    </ol>
+
+  
+</div>
+
+<div >
+    <h1 class="rag">This Is Heading</h1>
+    <p class="rag">because the image has z-index of -1,it will be placed behind the text</p>
+    <img src="images/background-2037172_1280.jpg" width="130px" height="160px" ;>
+
+</div>
+</body>
+</html>
